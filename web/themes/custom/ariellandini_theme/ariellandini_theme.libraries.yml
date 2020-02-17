@@ -1,0 +1,79 @@
+bootstrap-cdn:
+  remote: getbootstrap.com
+  version: 4.4.1
+  license:
+    name: "MIT"
+    url: https://github.com/twbs/bootstrap/blob/master/LICENSE
+  css:
+    theme:
+      'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css':
+        type: external
+        minified: true
+        attributes:
+          crossorigin: anonymous
+          integrity: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+  js:
+    https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js:
+      type: external
+      minified: true
+      attributes:
+        crossorigin: anonymous
+        integrity: "sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  dependencies:
+    - core/jquery
+
+
+font-awesome:
+  remote: https://fontawesome.com/
+  version: 5.8.1
+  license:
+    name: "Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License"
+    url: https://fontawesome.com/license/free
+    gpl-compatible: true
+  css:
+    theme:
+      https://use.fontawesome.com/releases/v5.8.1/css/all.css:
+        type: external
+        minified: true
+        attributes:
+          crossorigin: anonymous
+          integrity: "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+
+roboto-font:
+  remote: https://github.com/google/roboto/
+  license:
+    name: "Apache License, Version 2.0"
+    url: http://www.apache.org/licenses/LICENSE-2.0
+    gpl-compatible: true
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Roboto:
+        type: external
+        minified: false
+
+oswald-font:
+  remote: https://github.com/googlefonts/OswaldFont
+  license:
+    name: "Open Font License"
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web
+    gpl-compatible: true
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Oswald:
+        type: external
+        minified: false
+
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/style.css: {}
+      css/padd-mr.css: {}
+      css/vendor.css: {}
+
+global-scripts:
+  version: 1.x
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery

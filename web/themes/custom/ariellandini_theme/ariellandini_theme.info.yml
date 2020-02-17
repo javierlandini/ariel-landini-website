@@ -1,0 +1,23 @@
+name: Ariel Landini Website theme
+type: theme
+description: Custom theme for the site.
+core: 8.x
+base theme: stable
+
+regions:
+  header: 'Header'
+  content: 'Content'
+  messages: 'System messages'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+
+logo: images/ariel_landini_arquitecto_logo.png
+
+libraries:
+  - ariellandini_theme/bootstrap-cdn
+  - ariellandini_theme/font-awesome
+  - ariellandini_theme/roboto-font
+  - ariellandini_theme/oswald-font
+  - ariellandini_theme/global-styling
+  - ariellandini_theme/global-scripts

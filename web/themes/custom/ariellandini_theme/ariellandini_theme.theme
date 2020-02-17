@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Ariel Landini theme.
+ */
+function ariellandini_theme_preprocess_page(array &$variables) {
+  // Load the site name out of configuration.
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+  $variables['site_slogan'] = $config->get('slogan');
+}
