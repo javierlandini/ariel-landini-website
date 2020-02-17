@@ -1092,7 +1092,6 @@ input::placeholder, textarea::placeholder{
 	background:#333;
 	margin-top:0;
     bottom: 0;
-    position: fixed;
     width: 100%;
 }
 .footer-bt p a{
@@ -1154,7 +1153,6 @@ input::placeholder, textarea::placeholder{
 	.footer-bt {
 		margin-top: 0;
 		bottom: 0;
-		position: fixed;
 		width: 100%;
 	}
 	.s-works{
